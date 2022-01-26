@@ -115,7 +115,7 @@
         "function"
         (+ (syntax whitespace))
         (? "&")
-        (group (+ (or (syntax word) (syntax symbol))))
+        (group (+ (or (syntax word) (syntax symbol) (char multibyte))))
         (* (syntax whitespace))
         "("))
   "Regular expression for a PHP function.")
